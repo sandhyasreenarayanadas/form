@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>REGISTRATION FORM</title>
+<style>
+    #Register-form{
+        width: 300px;
+        background-color: burlywood;
+        padding: 30px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .text-label{
+        margin: 0;
+        margin-top: 4px;
+        margin-bottom: 4px;
+    }
+    .text-box{
+        width: auto;
+        height: auto;
+
+    }
+    #tc{
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    </style>
+    <body style="background-color: cornflowerblue;">
+        <h2 style="text-align: center;">Register</h2>
+        <form id="Register-form">
+        <div>
+         <p class="text-label">First Name:</p> <input class="text-box" type="text" name="First Name">
+         <p class="text-label">Last Name</p>  <input class="text-box"  type="text" name="Last Name">
+       </div>
+       <div>  
+        <p class="text-label">E-mail</p> <input class="text-box" type="email" name="E-mail">
+     </div>
+     <div>
+        <p class="text-label">Password</p>  <input class="text-box" type="password" name="Password">
+    </div>
+    <div>
+      <p class="text-label">Confirm Password</p>  <input class="text-box" type="password" name="Confirm Password">
+    </div>
+    <div>
+       <p class="text-label">Mobile Number</p>  <input class="text-box" type="tel" pattern="{0-9}{2}-{0-9}{10}" placeholder="91-9999999999" name="Mobile Number">
+    </div>
+    <div>
+    <p class="text-label"></p>Gender:</p>
+    Male<input class="text-box" type="radio" name="Male">
+    Female<input class="text-box" type="radio" name="Female">
+    </div>
+    <div>
+    <p class="text-label">Security Question</p>
+    </div>
+    <div>
+    <select>
+        <option value="Lucky Number">What is your lucky number</option>
+        <option value="Favourite Color">What is your favourite Color</option>
+    </select>
+    </div>
+    <div>
+        <textarea name="Answer" rows="4" cols="24"></textarea>
+        </div>
+        <div>
+          <input id="tc"  type="checkbox" name="T&C" value="Accepted"> I agree with T&C
+          </div>
+          <div>
+          <input type="submit" value="Register">
+          </div>
+        </form>
+    </body>
+</html>
